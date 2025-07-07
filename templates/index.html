@@ -82,22 +82,22 @@
     <form action="/predict" method="POST">
       <h1>Predict Birth Weight</h1>
 
-      <label for="gestation">Gestation</label>
+      <label for="gestation">Gestation in days</label>
       <input type="text" name="gestation" id="gestation"/>
 
-      <label for="parity">Parity</label>
+      <label for="parity">Parity (no of kids) </label>
       <input type="text" name="parity" id="parity"/>
 
-      <label for="age">Age</label>
+      <label for="age">Age (in years)</label>
       <input type="text" name="age" id="age"/>
 
-      <label for="height">Height</label>
+      <label for="height">Height (in inches)</label>
       <input type="text" name="height" id="height"/>
 
-      <label for="weight">Weight</label>
+      <label for="weight">Weight (in pounds)</label>
       <input type="text" name="weight" id="weight"/>
 
-      <label for="smoke">Smoke</label>
+      <label for="smoke">Smoke (0/1)</label>
       <input type="text" name="smoke" id="smoke"/>
 
       <button type="submit">Predict Birth Weight</button>
@@ -105,7 +105,7 @@
 
     {% if prediction %}
       <div class="result">
-        Predicted Birth Weight: {{ prediction }}
+        Predicted Birth Weight (in ounces): {{ prediction }}
       </div>
     {% endif %}
   </div>
